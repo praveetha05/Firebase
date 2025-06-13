@@ -1,0 +1,22 @@
+
+<body>
+   
+    <div class="container w-50 h-50 d-flex justify-content-center align-items-center">
+          <h1 class="text-center">Login</h1>
+
+       
+
+<form action="" (ngSubmit)="loginUser()" class="mx-auto">
+    <label for="">Email:</label>
+    <input type="email" [(ngModel)]="email" name="email" class="form-control" placeholder="Enter the email">
+    <label for="">Password:</label>
+    <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Enter the password">
+
+    <button  type="submit" >Submit</button>
+
+</form>
+<p *ngIf="errorMessage" style="color: red;">{{errorMessage}}</p>
+<p *ngIf="successMessage" style="color: green;">{{successMessage}}</p>
+
+</div>
+</body>
